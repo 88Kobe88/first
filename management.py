@@ -18,7 +18,7 @@ class DB_3():
 
     def get_value_by_id(self, id):
         value = self.session.query(Car).get(id)
-          #print(value)
+        return value
 
     def filter_by_name(self, name):
         value = self.session.query(Car).filter_by(name=name).all()
